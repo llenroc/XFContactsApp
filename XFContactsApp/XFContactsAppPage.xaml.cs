@@ -8,6 +8,25 @@ namespace XFContactsApp
         {
             InitializeComponent();
         }
+
+        async void Button_Clicked(object sender, System.EventArgs e)
+        {
+            var clickedButton = sender as Button;
+
+            if (clickedButton == null)
+            {
+                return;
+            }
+
+            var selectedContact = clickedButton.CommandParameter?.ToString();
+
+            if (string.IsNullOrWhiteSpace(selectedContact))
+            {
+                return;
+            }
+
+            await DisplayAlert("Clicked", $"You have clicked {selectedContact}", "Ok");
+        }
     }
 }
 
