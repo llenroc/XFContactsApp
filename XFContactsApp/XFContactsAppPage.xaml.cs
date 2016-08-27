@@ -30,7 +30,11 @@ namespace XFContactsApp
                 return;
             }
 
-            await DisplayAlert("Clicked", $"You have clicked {selectedContact}", "Ok");
+            await Navigation.PushAsync(new ContactDetailPage(new ContactEntity
+            {
+                Name = $"Name {selectedContact}",
+                Description = $"Desc {selectedContact}"
+            }));
         }
 
         void SearchBar_ButtonPressed(object sender, EventArgs e)
@@ -42,7 +46,7 @@ namespace XFContactsApp
                 return;
             }
 
-            contactList.ItemsSource = string.IsNullOrWhiteSpace(searchBar.Text) 
+            contactList.ItemsSource = string.IsNullOrWhiteSpace(searchBar.Text)
                                             ? GetContacts() : GetFilteredContacts(searchBar.Text);
         }
 
@@ -57,6 +61,27 @@ namespace XFContactsApp
 
             contactList.ItemsSource = string.IsNullOrWhiteSpace(searchBar.Text)
                                             ? GetContacts() : GetFilteredContacts(searchBar.Text);
+        }
+
+        async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+
+            var selectedItem = e.SelectedItem as ContactEntity;
+
+            if (selectedItem == null)
+            {
+                return;
+            }
+
+            var navigateTask = Navigation.PushAsync(new ContactDetailPage(selectedItem));
+
+            contactList.SelectedItem = null;
+
+            await navigateTask;
         }
 
         static IEnumerable<ContactEntity> GetContacts()
