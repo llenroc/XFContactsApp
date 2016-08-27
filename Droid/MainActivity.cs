@@ -6,7 +6,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace XFContactsApp.Droid
 {
-    [Activity(Label = "XFContactsApp.Droid", Icon = "@drawable/icon"
+    [Activity(Label = "XFContactsApp.Droid", Icon = "@drawable/icon", Theme="@style/MyCustomTheme"
               , MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsApplicationActivity
     {

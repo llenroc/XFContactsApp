@@ -1091,32 +1091,32 @@ namespace XFContactsApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a0048
-			public const int abc_background_cache_hint_selector_material_dark = 2131361864;
-			
-			// aapt resource value: 0x7f0a0049
-			public const int abc_background_cache_hint_selector_material_light = 2131361865;
-			
 			// aapt resource value: 0x7f0a004a
-			public const int abc_color_highlight_material = 2131361866;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361866;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int abc_background_cache_hint_selector_material_light = 2131361867;
+			
+			// aapt resource value: 0x7f0a004c
+			public const int abc_color_highlight_material = 2131361868;
 			
 			// aapt resource value: 0x7f0a000e
 			public const int abc_input_method_navigation_guard = 2131361806;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int abc_primary_text_disable_only_material_dark = 2131361867;
-			
-			// aapt resource value: 0x7f0a004c
-			public const int abc_primary_text_disable_only_material_light = 2131361868;
-			
 			// aapt resource value: 0x7f0a004d
-			public const int abc_primary_text_material_dark = 2131361869;
+			public const int abc_primary_text_disable_only_material_dark = 2131361869;
 			
 			// aapt resource value: 0x7f0a004e
-			public const int abc_primary_text_material_light = 2131361870;
+			public const int abc_primary_text_disable_only_material_light = 2131361870;
 			
 			// aapt resource value: 0x7f0a004f
-			public const int abc_search_url_text = 2131361871;
+			public const int abc_primary_text_material_dark = 2131361871;
+			
+			// aapt resource value: 0x7f0a0050
+			public const int abc_primary_text_material_light = 2131361872;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int abc_search_url_text = 2131361873;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int abc_search_url_text_normal = 2131361807;
@@ -1127,11 +1127,11 @@ namespace XFContactsApp.Droid
 			// aapt resource value: 0x7f0a0011
 			public const int abc_search_url_text_selected = 2131361809;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int abc_secondary_text_material_dark = 2131361872;
+			// aapt resource value: 0x7f0a0052
+			public const int abc_secondary_text_material_dark = 2131361874;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int abc_secondary_text_material_light = 2131361873;
+			// aapt resource value: 0x7f0a0053
+			public const int abc_secondary_text_material_light = 2131361875;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int accent_material_dark = 2131361810;
@@ -1283,6 +1283,12 @@ namespace XFContactsApp.Droid
 			// aapt resource value: 0x7f0a0035
 			public const int material_grey_900 = 2131361845;
 			
+			// aapt resource value: 0x7f0a0049
+			public const int mydarkgreen = 2131361865;
+			
+			// aapt resource value: 0x7f0a0048
+			public const int mygreen = 2131361864;
+			
 			// aapt resource value: 0x7f0a0036
 			public const int primary_dark_material_dark = 2131361846;
 			
@@ -1331,11 +1337,11 @@ namespace XFContactsApp.Droid
 			// aapt resource value: 0x7f0a0045
 			public const int switch_thumb_disabled_material_light = 2131361861;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int switch_thumb_material_dark = 2131361874;
+			// aapt resource value: 0x7f0a0054
+			public const int switch_thumb_material_dark = 2131361876;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int switch_thumb_material_light = 2131361875;
+			// aapt resource value: 0x7f0a0055
+			public const int switch_thumb_material_light = 2131361877;
 			
 			// aapt resource value: 0x7f0a0046
 			public const int switch_thumb_normal_material_dark = 2131361862;
@@ -3088,9 +3094,6 @@ namespace XFContactsApp.Droid
 			// aapt resource value: 0x7f09001c
 			public const int Animation_Design_BottomSheetDialog = 2131296284;
 			
-			// aapt resource value: 0x7f090174
-			public const int AppCompatDialogStyle = 2131296628;
-			
 			// aapt resource value: 0x7f0900be
 			public const int Base_AlertDialog_AppCompat = 2131296446;
 			
@@ -3533,10 +3536,16 @@ namespace XFContactsApp.Droid
 			public const int CardView_Light = 2131296282;
 			
 			// aapt resource value: 0x7f090172
-			public const int MyTheme = 2131296626;
+			public const int MyCustomTheme = 2131296626;
+			
+			// aapt resource value: 0x7f090174
+			public const int MyCustomTheme_ActionBar_TitleTextStyle = 2131296628;
 			
 			// aapt resource value: 0x7f090173
-			public const int MyTheme_Base = 2131296627;
+			public const int MyCustomTheme_ActionBarStyle = 2131296627;
+			
+			// aapt resource value: 0x7f090175
+			public const int MyCustomTheme_ButtonStyle = 2131296629;
 			
 			// aapt resource value: 0x7f09004b
 			public const int Platform_AppCompat = 2131296331;

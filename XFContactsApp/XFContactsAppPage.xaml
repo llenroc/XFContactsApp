@@ -61,8 +61,7 @@
 	</ContentPage>
 	<ContentPage Title="All Contacts" BackgroundColor="White">
 		<StackLayout VerticalOptions="FillAndExpand">
-			<SearchBar VerticalOptions="Start" HorizontalOptions="Fill" Placeholder="Search Contacts" BackgroundColor="Gray" 
-				SearchButtonPressed="SearchBar_ButtonPressed" TextChanged="SearchBar_TextChanged" />
+			<SearchBar VerticalOptions="Start" HorizontalOptions="Fill" Placeholder="Search Contacts" SearchButtonPressed="SearchBar_ButtonPressed" TextChanged="SearchBar_TextChanged" />
 			<ListView x:Name="contactList" VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement" ItemSelected="ListView_ItemSelected">
 				<ListView.ItemTemplate>
 					<DataTemplate>
